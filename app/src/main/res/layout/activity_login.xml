@@ -18,13 +18,14 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
-        <EditText
+        <EditText android:id="@+id/email_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"/>
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
-        <EditText
+        <EditText android:id="@+id/password_edittext"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"/>
@@ -43,6 +45,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/email_login_button"
             android:text="@string/signin_email"
             android:theme="@style/Theme.Subinstagram_f16"
             android:layout_width="match_parent"
